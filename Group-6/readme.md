@@ -1,19 +1,19 @@
-# Building Rent Management
+Building Rent Management
 
-#Project members:
+Project members:
 
-#MD Abu siddik-20201131010
+MD Abu siddik-20201131010
 
-#Mrittika Banerjee -20201140010
+Mrittika Banerjee -20201140010
 
-#Thamina Akter mitu -20201148010
+Thamina Akter mitu -20201148010
 
 
-#Project supervisor
+Project supervisor
 
-#MD shymon Islam
+MD shymon Islam
 
-#Lecture of cse
+Lecture of cse
 
-# Nwu
+ Nwu
 
