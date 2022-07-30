@@ -1,1 +1,1 @@
-# A Management System
+# Tuition Management System 
