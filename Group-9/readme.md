@@ -1,18 +1,12 @@
-# T-shirt stock management system
+# T-shirt Stock Management System (TSMS)
 
+# Project Member: Nayan Sarkar, Moupia Mazumder Mou, Asmaul Husna Mony 
 
-# Name: Nayan Sarkar
-# ID: 20201126010
+# Project Member ID: 20201126010, 20201146010, 20201157010
 
+# Project Member E-mail: nwu.sarkar126@gmail.com, moupia2207@gmail.com, ahmoni440@gmail.com
 
-# Name: Asmaul Husna Mony
-# ID: 20201157010
+# Project Supervisor: Md. Shymon Islam, Lecturer, Department of CSE,
 
-
-# Name: Moupia Mazumder Mou 
-# ID: 20201146010
-
-
-# Project Supervisor MD Shymon Islam
-# Lecture of Cse NWU
+# North Western University, Khulna, Bangladesh
 
