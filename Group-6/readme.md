@@ -1,3 +1,5 @@
+Project name:
+
 Building Rent Management
 
 Project members:
@@ -8,8 +10,16 @@ Mrittika Banerjee -20201140010
 
 Thamina Akter mitu -20201148010
 
+Email:
 
-Project supervisor
+abusiddick84@gmail.com
+
+mrittikabanerjee6@gmail.com
+
+ttahminaakter4@gmail.com
+
+
+Project supervisor:
 
 MD shymon Islam
 
