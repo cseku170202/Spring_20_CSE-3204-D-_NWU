@@ -1,1 +1,1 @@
-# A Management System
+# T-shirt stock management system
