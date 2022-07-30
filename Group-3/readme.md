@@ -1,9 +1,7 @@
 # Tuition Management System 
-# Name: Anisha Akhter ID: 20201119010
-# Name: Raihanul Islam Apu ID: 20201133010
-# Name: MD Shahed Afridi ID: 20201134010
-
-
+# Project Members Name: Anisha Akter, Raihanul Islam Apu, MD Shahed Afridi 
+# Project Members ID: 20201119010, 20201133010, 20201134010
+# Project Members Email: srabonianisha@gmail.com, opu.raihankhan@gmail.com, shahedafridi99@gmail.com 
 
 
 
@@ -11,5 +9,5 @@
 # Project Supervisor
 # Md.  Shymon Islam
 # Lecturer
-# Department of cse
+# Department of Computer Science and Engineering 
 # North Western University 
