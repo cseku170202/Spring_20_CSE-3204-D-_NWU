@@ -1,5 +1,3 @@
-# A Management System
-
 # Project Name : Hotel management system
 
 Group members:
