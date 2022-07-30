@@ -4,18 +4,12 @@
 #Project Name: " University Management "
 
 #Project Members:
+     1.Khandaker Istekharul Haque-125
+     2.Jaba Baidya-132
+     3. Nishat Yeasmin Arzu-149
 
-     # Khandaker Istekharul Haque-125
-
-     # Jaba Baidya-132
-
-     # Nishat Yeasmin Arzu-149
-
- 
 #Project Supervisor:
 
-     # Md.Shymon Islam
-
-     # Lecturer of CSE
-
-     # North Western University 
+      Md.Shymon Islam
+      Lecturer of CSE
+     North Western University 
