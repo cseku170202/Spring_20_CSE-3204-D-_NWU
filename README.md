@@ -1,16 +1,22 @@
-# Spring_20_CSE-3204-D-_NWU
-# Software Development Sessional III
-
 #Project Name: " University Management "
 
-#Project Members
+ #Group Members:
+     # Khandaker Istekharul Haque-20201125010
+     # Jaba Baidya-20201132010
+     # Nishat Yeasmin Arzu-20201149010
 
-     # Khandaker Istekharul Haque-125
-     # Jaba Baidya-132
-     # Nishat Yeasmin Arzu-149
- 
+#Group Members Id:
+      20201125010
+      20201132010
+      20201149010
+
+#Group Members Email Address:
+     prantokih42@gmail.com
+     jaba4378@gmail.com
+     nishatshubinita@gmail.com 
+
 #Project Supervisor:
-
-     # Md.Shymon Islam
-     # Lecturer of CSE
-     # North Western University 
+       Md.Shymon Islam
+       Lecturer of CSE
+       North Western University
+       Bangladesh 
