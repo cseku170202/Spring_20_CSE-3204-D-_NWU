@@ -13,7 +13,7 @@ Khanistiak0177@gmail.com
 firenzedaezio6@gmail.com
 
 # Project Supervisor :
-Md. Shymon Islam 
-Lecturer 
-Department of CSE
+Md. Shymon Islam, 
+Lecturer, 
+Department of CSE,
 NWU
