@@ -1,4 +1,4 @@
 # T-shirt stock management system
 
-Name: nayan Sarkar
+Name: Nayan Sarkar
 ID: 20200026010
