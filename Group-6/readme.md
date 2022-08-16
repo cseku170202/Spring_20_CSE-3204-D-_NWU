@@ -1,29 +1,11 @@
-Project name:
+# Building Rent Management
 
-Building Rent Management
+# Project members: MD Abu siddik, Mrittika Banerjee, Thamina Akter mitu
 
-Project members:
+# Project Member Id: 20201131010, 20201140010, 20201148010
 
-MD Abu siddik-20201131010
+# Project Member Email: abusiddick84@gmail.com, mrittikabanerjee6@gmail.com, ttahminaakter4@gmail.com
 
-Mrittika Banerjee -20201140010
+# Project supervisor:
 
-Thamina Akter mitu -20201148010
-
-Email:
-
-abusiddick84@gmail.com
-
-mrittikabanerjee6@gmail.com
-
-ttahminaakter4@gmail.com
-
-
-Project supervisor:
-
-MD shymon Islam
-
-Lecture of cse
-
- Nwu
-
+# Project Supervisor: Md. Shymon Islam, Lecturer, Department of CSE, North Western University, Khulna, Bangladesh
