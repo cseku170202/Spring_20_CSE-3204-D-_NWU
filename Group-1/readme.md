@@ -11,7 +11,7 @@
 
 
 # Project Supervisor:
-# Md. Shymon Islam, 
+# Md. Shymon Islam 
 # Lecturer 
 # Department of Computer Science and Engineering 
 # North Western University
