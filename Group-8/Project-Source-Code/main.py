@@ -5,7 +5,7 @@ from PIL import ImageTk, Image
 import Image
 
 win = Tk()
-win.title("Restuarent Management System")
+win.title("Let's Ketchup")
 win.configure(bg="#F0FFF0")
 win.geometry('900x875')
 canv = Canvas(win, width=900, height=675, bg='white')
@@ -14,7 +14,7 @@ canv.place(x=0,y=0)
 img = ImageTk.PhotoImage(Image.open("rbg.webp"))
 canv.create_image(0,0, anchor=NW, image=img)
 
-mylabel=Label(win, text="Welcome To Our Restaurent",font='Times 30 bold',bg="black",fg="white").place(x=205,y=10)
+mylabel=Label(win, text="Welcome To Our Restaurent",font='Times 30 bold',bg="black",fg="white").place(x=310,y=10)
 mylabel1=Label(win, text="Contact Us\nPhone Number:0152284562\nAddress:76,Munshiganj,Khulna",font='Times 20 bold',bg="#F0FFF0",fg="black").place(x=220,y=690)
 
 def quit():
