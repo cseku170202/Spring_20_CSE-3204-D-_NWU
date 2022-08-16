@@ -139,7 +139,7 @@ If there is any problem contact with us...
 		Samiul Hasnat Sazin 
 	      firenzedaezio6@gmail.com
 
-	Student of Computer Science Engineering 	
+	Students of Computer Science and Engineering 	
 	North Western University,Khulna,Bangladesh
 
 	
