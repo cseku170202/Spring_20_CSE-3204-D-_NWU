@@ -770,8 +770,8 @@ def blk_user():
         my_tree.heading("#0", text="", anchor=W)
         my_tree.heading("username", text="Username", anchor=CENTER)
         my_tree.heading("class", text="Class", anchor=CENTER)
-        my_tree.heading("phone_no", text="Phone Number", anchor=CENTER)
-        my_tree.heading("review", text="Average Review", anchor=CENTER)
+        my_tree.heading("phone_no", text="Average Review", anchor=CENTER)
+        my_tree.heading("review", text="User ID", anchor=CENTER)
 
         conn = sqlite3.connect('tms.db')
         c = conn.cursor()
@@ -782,7 +782,7 @@ def blk_user():
         count = 0
 
         for record in data:
-            my_tree.insert(parent='', index='end', iid=count, text="", values=(record[1], record[3], record[7], record[8]))
+            my_tree.insert(parent='', index='end', iid=count, text="", values=(record[1], record[3], record[8], record[9]))
             count += 1
 
         my_tree.grid(row=3, column=2)
@@ -805,8 +805,8 @@ def blk_user():
         my_tree.heading("#0", text="", anchor=W)
         my_tree.heading("username", text="Username", anchor=CENTER)
         my_tree.heading("class", text="E-mail", anchor=CENTER)
-        my_tree.heading("phone_no", text="Phone Number", anchor=CENTER)
-        my_tree.heading("review", text="Average Review", anchor=CENTER)
+        my_tree.heading("phone_no", text="Average Review", anchor=CENTER)
+        my_tree.heading("review", text="User ID", anchor=CENTER)
 
         conn = sqlite3.connect('tms.db')
         c = conn.cursor()
@@ -818,7 +818,7 @@ def blk_user():
 
         for record in data:
             my_tree.insert(parent='', index='end', iid=count, text="",
-                           values=( record[1], record[3], record[7], record[8]))
+                           values=( record[1], record[3], record[8], record[9]))
             count += 1
 
         my_tree.grid(row=3, column=4)
