@@ -1,0 +1,147 @@
+----------------------------------------------------------------------------------------------------------------------------
+............................................................For Run This Project............................................
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+..............First Step (XAMPP install and setup)....................
+
+=>Install Xampp software then go to "http://localhost/phpmyadmin" by a browser
+=>Create A database named hotel
+=>Import the Database.sql file into hotel database
+
+
+
+..............Second Step (python and pycharm install)......................
+
+=>Intall python latest version.
+=>Intall pycharm latest version.
+=>After install this two software open pycharm software.
+=>For open sourse code in pycharm goto file option then press open then select the hotel sourse code folder.
+
+
+
+.............Third Step (Package install)....................
+
+=>If you want to run in your pycharm you must select python as interpreter. 
+=>For selecting and installing python package goto file option then press setting.
+=>After selecting interpreter you have to install some package into your interpreter.
+=>If you dont install packge the codes are showing Error.
+=>Follow step 4 for package name.
+=>Install latest version of all package.
+=>All package must need to be install.
+=>For more information goto YouTube.
+
+
+
+..............Fourth Step (Package Name And Details)..................
+
+Babel	                         2.10.3	     2.10.3
+Jinja2	                         3.1.2	     3.1.2
+MarkupSafe	                 2.1.1	     2.1.1
+MouseInfo	                 0.1.3	     0.1.3
+Pillow	                         9.2.0	     9.2.0
+Pillow-PIL	                 0.1.dev0	
+PillowImage	                 1.1.11	     1.1.11
+PyAutoGUI	                 0.9.53	     0.9.53
+PyBundle	                 1.0.6	     1.0.6
+PyGetWindow	                 0.0.9	     0.0.9
+PyMsgBox	                 1.0.9	     1.0.9
+PyQt5	                         5.15.7	     5.15.7
+PyQt5-Qt5	                 5.15.2	     5.15.2
+PyQt5-sip	                 12.11.0     12.11.0
+PyRECONSTRUCT	                 2.2.0	     2.2.0
+PyRect	                         0.2.0	     0.2.0
+PyScreeze	                 0.1.28	     0.1.28
+PythonLoginAndRegister	         0.1	     0.1
+SQLAlchemy	                 1.4.39	     1.4.40
+about	                         5.2	     5.2
+absl-py	                         1.2.0	     1.2.0
+aiofiles	                 0.8.0	     0.8.0
+aiosqlite	                 0.17.0	     0.17.0
+anyio	                         3.6.1	     3.6.1
+bidict	                         0.22.0	     0.22.0
+certifi	                         2022.6.15   2022.6.15
+charset-normalizer	         2.1.0	     2.1.0
+click	                         8.1.3	     8.1.3
+colorama	                 0.4.5	     0.4.5
+comtypes	                 1.1.11	     1.1.13
+config	                         0.5.1	      0.5.1
+controller	                 0.1.0	      0.1.0
+cycler	                         0.11.0	      0.11.0
+dashboard	                 0.0.6	      0.0.6
+databases	                 0.6.0	      0.6.1
+fonttools	                 4.34.4	      4.34.4
+greenlet	                 1.1.2	      1.1.2
+gui-automation	                 3.2.1	      3.2.1
+gui-pkg-bweindorf	         0.5.1	      0.5.1
+h11	                         0.13.0	      0.13.0
+idna	                         3.3	      3.3
+imutils	                         0.5.4	      0.5.4
+kiwisolver	                 1.4.4	      1.4.4
+login	                         0.0.6	      0.0.6
+matplotlib	                 3.5.2	      3.5.3
+mysql-connector-python	         8.0.29	      8.0.30
+numpy	                         1.23.1	      1.23.2
+opencv-python	                 4.6.0.66     4.6.0.66
+orm	                         0.2.0.dev1   0.3.1
+packaging	                 21.3	      21.3
+pip	                         22.0.4	      22.2.2
+protobuf	                 4.21.3	      4.21.5
+pyparsing	                 3.0.9	      3.0.9
+pyperclip	                 1.8.2	      1.8.2
+python-dateutil	                 2.8.2	      2.8.2
+python-dotenv	                 0.20.0	      0.20.0
+python-engineio	                 4.3.3	      4.3.4
+python-multipart	         0.0.5	      0.0.5
+python-socketio	                 5.7.1	      5.7.1
+pytweening	                 1.0.4	      1.0.4
+pytz	                         2022.2.1     2022.2.1
+pywin32	                         304	      304
+pywin32-ctypes	                 0.2.0	      0.2.0
+pywinauto	                 0.6.8	      0.6.8
+reportlab	                 3.6.11	      3.6.11
+requests	                 2.28.1	      2.28.1
+resampling	                 0.0.0	      0.0.0
+sc-mainwindow	                 1.2	      1.2
+setuptools	                 58.1.0	      65.0.0
+six	                         1.16.0	      1.16.0
+sniffio	                         1.2.0	      1.2.0
+starlette	                 0.20.4	      0.20.4
+tkcalendar	                 1.6.1	      1.6.1
+typesystem	                 0.3.0.dev0   0.4.1
+typing-extensions	         4.3.0	      4.3.0
+urllib3	                         1.26.10      1.26.11
+uvicorn	                         0.18.2	      0.18.2
+
+
+
+..............Fifth Step(Login Information).................
+
+After Doing this all select the main.py file and run it.
+The Project will run successfully.
+For log in into Admin and Receptionist goto hotel database and check ad_log, st_log for id and password.
+After successfully login check all the option.
+
+
+
+If there is any problem contact with us...
+
+
+..................About us...................
+
+		Mashuka Yeasmin
+	 mashukayeasmin720436@gmail.com
+
+		Istiak Khan
+	  Khanistiak0177@gmail.com
+
+		Samiul Hasnat Sazin 
+	      firenzedaezio6@gmail.com
+
+	Student of Computer Science Engineering 	
+	North Western University,Khulna,Bangladesh
+
+	
+----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
