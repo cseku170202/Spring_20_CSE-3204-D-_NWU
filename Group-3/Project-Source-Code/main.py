@@ -17,11 +17,20 @@ def start_admin():
 
     def log_in():
 
-        if entry1.get() == "raihan" and entry2.get() == '133':
-            root.destroy()
-            blk_user()
-        else:
+        conn = sqlite3.connect('tms.db')
+        c = conn.cursor()
+
+        username_admin = entry1.get()
+        userpass_admin = entry2.get()
+
+        c.execute("SELECT * FROM admin_login WHERE username= ? AND password=?", (username_admin,userpass_admin,))
+        record = c.fetchall()
+
+        if record == []:
             messagebox.showerror("Error", "Username or Password was Incorrect")
+        else:
+            root.destroy()
+            admin_page()
 
     label2 = Label(root, text="Admin Login Page", font="timesnewroman 15 bold", padx=20, pady=20,fg="blue")
     label2.grid(row=1, column=4, pady=30, padx=(100,0))
@@ -62,6 +71,154 @@ def start_admin():
     back_btn = Button(root, image=new_pic2, command=back)
     back_btn.grid(row=0, column=1)
 
+    root.mainloop()
+
+
+def admin_page():
+    root = Tk()
+    root.title("Tuition Management System")
+    root.geometry("980x620")
+
+    my_pi = Image.open("administrator.png")
+    resize = my_pi.resize((400, 400))
+    new_pi = ImageTk.PhotoImage(resize)
+
+    btn = Label(root, image=new_pi)
+    btn.grid(row=1,column=4)
+
+    def block():
+        root.destroy()
+        blk_user()
+
+    def change_pass():
+        root3 = Tk()
+        root3.title("Tuition Management System")
+        root3.geometry("520x380")
+        root3.configure(background="aqua")
+
+        def info():
+            conn = sqlite3.connect('tms.db')
+            c = conn.cursor()
+
+            username_admin = user_entry.get()
+
+            c.execute("SELECT * FROM admin_login WHERE username= ?", (username_admin,))
+            record = c.fetchall()
+
+            if record == []:
+                messagebox.showerror("Error", "There is no username that you entered")
+            else:
+                if pass_entry.get() == con_pass_entry.get():
+                    c.execute("""UPDATE admin_login SET
+                                    password = :rv
+
+                                    WHERE username = :oid""",
+                              {
+                                  'rv': pass_entry.get(),
+                                  'oid': user_entry.get()
+                              })
+                    root3.destroy()
+                    messagebox.showinfo("Successful", "Password Change Successfully")
+
+                    conn.commit()
+                    conn.close()
+                else:
+                    messagebox.showerror("Error", "Two password does not matched")
+
+        title = Label(root3, text="Change Password", font="times 20", bg="aqua")
+        title.grid(row=0, column=0, pady=20, columnspan=2, padx=(30, 0))
+
+        user_label = Label(root3, text="Enter username", font="times 15", bg="aqua")
+        user_label.grid(row=1, column=0, pady=(30, 5), padx=(20, 10))
+        pass_label = Label(root3, text="Enter new password", font="times 15", bg="aqua")
+        pass_label.grid(row=2, column=0, pady=5, padx=(20, 10))
+        con_label = Label(root3, text="Enter new password again", font="times 15", bg="aqua")
+        con_label.grid(row=3, column=0, pady=5, padx=(20, 10))
+
+        user_entry = Entry(root3, width=30)
+        user_entry.grid(row=1, column=1, pady=(30,0))
+        pass_entry = Entry(root3, width=30)
+        pass_entry.grid(row=2, column=1)
+        con_pass_entry = Entry(root3, width=30)
+        con_pass_entry.grid(row=3, column=1)
+
+        save_btn = Button(root3, text="Save", bg="maroon", font="times 15", fg="white", command=info)
+        save_btn.grid(row=4, column=0, columnspan=2, pady=30, ipadx=35)
+
+        root3.mainloop()
+
+    def add_admin():
+        root2 = Tk()
+        root2.title("Tuition Management System")
+        root2.geometry("420x380")
+        root2.configure(background="aqua")
+
+        def save():
+            conn = sqlite3.connect('tms.db')
+            c = conn.cursor()
+
+            c.execute("INSERT INTO admin_login VALUES(:username, :password)",
+
+                      {
+                          'username': user_entry.get(),
+                          'password': pass_entry.get()
+                      })
+
+            root2.destroy()
+            messagebox.showinfo("Successful", "Added a admin Successfully")
+
+            conn.commit()
+            conn.close()
+
+        title = Label(root2, text="Add a new admin", font="times 20", bg="aqua")
+        title.grid(row=0, column=0, pady=20, columnspan=2, padx=(30,0))
+
+        user_label = Label(root2, text="Enter username", font="times 15", bg="aqua")
+        user_label.grid(row=1, column=0, pady=(30,20), padx=(20,10))
+        pass_label = Label(root2, text="Enter password", font="times 15", bg="aqua")
+        pass_label.grid(row=2, column=0, pady=5, padx=(20,10))
+
+        user_entry = Entry(root2, width=30)
+        user_entry.grid(row=1, column=1)
+        pass_entry = Entry(root2, width=30)
+        pass_entry.grid(row=2, column=1)
+
+        create_btn = Button(root2, text="Create", bg="maroon", font="times 15", fg="white", command=save)
+        create_btn.grid(row=3, column=0, columnspan=2, pady=30, ipadx=35)
+
+
+        root2.mainloop()
+
+    change_pass_btn = Button(root, text="Change Password", pady=5, padx=5, bg="#00FFFF", font="times 15", command=change_pass)
+    change_pass_btn.grid(row=2, column=2, ipadx=15, pady=20)
+    block_btn = Button(root, text="Block a user", pady=5, padx=5, bg="#00FFFF", font="times 15", command=block)
+    block_btn.grid(row=2, column=5, ipadx=25, pady=20)
+    add_btn = Button(root, text="Add new admin", pady=5, padx=5, bg="#00FFFF", font="times 15", command=add_admin)
+    add_btn.grid(row=2, column=4, ipadx=22, pady=20)
+
+    title = Label(root, text="Admin :)", font="times 30 bold", fg="#000080").grid(row=1, column=4, pady=(320,0), ipadx=20)
+
+    def back_homepage():
+        root.destroy()
+        homepage()
+
+    my_pic = Image.open("home-icon-silhouette.png")
+    resized = my_pic.resize((50, 50))
+    new_pic = ImageTk.PhotoImage(resized)
+
+    home_btn = Button(root, image=new_pic, command=back_homepage)
+    home_btn.grid(row=0, column=0)
+
+    def back():
+        root.destroy()
+        start_admin()
+
+    my_pic2 = Image.open("left-arrow.png")
+    resized2 = my_pic2.resize((50, 50))
+    new_pic2 = ImageTk.PhotoImage(resized2)
+
+    back_btn = Button(root, image=new_pic2, command=back)
+    back_btn.grid(row=0, column=1)
 
 
     root.mainloop()
@@ -71,7 +228,7 @@ def start_student():
 
     root = Tk()
     root.title("Tuition Management System")
-    root.geometry("950x500")
+    root.geometry("900x650")
     root.configure(background='orchid')
 
     bg = PhotoImage(file="F:/finalproject/student.png")
@@ -165,7 +322,7 @@ def start_student():
 def start_teacher():
     root = Tk()
     root.title("Tuition Management System")
-    root.geometry("1100x500")
+    root.geometry("1100x600")
 
     bg = PhotoImage(file="F:/finalproject/teacher.png")
 
@@ -940,7 +1097,7 @@ def blk_user():
 
     def back():
         root.destroy()
-        start_admin()
+        admin_page()
 
     my_pic2 = Image.open("exit (2).png")
     resized2 = my_pic2.resize((50, 50))
@@ -1762,5 +1919,6 @@ def homepage():
 
 
 homepage()
+
 
 
