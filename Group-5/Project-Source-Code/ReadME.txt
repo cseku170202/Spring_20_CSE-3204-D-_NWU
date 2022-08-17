@@ -84,7 +84,7 @@ if there is any problem contact with us
 ----------------------------------------------------
 /////////////About us//////////////////////////////
 ---------------------------------------------------
-/		Khandaker Istekharul Haque		/
+/	Khandaker Istekharul Haque		/
 /	Email:prantokih42@gmail.com	/
 /	Nishat Yeasmin Arzu		/
 /  Email: nishatshubinita@gmail.com	/
