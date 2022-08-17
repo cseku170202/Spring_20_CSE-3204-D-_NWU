@@ -51,7 +51,11 @@ wheel	0.37.1	0.37.1
 After Doing this All select the main.py file and run it.
 The Project Will Successfully Run
 for log in into Admin page you must input the username: raihan and password: 133
-After successfully login you see a block user page. If you want to block a teacher 
+After successfully login you see a admin page. There have 3 actions you can do- 
+change password, add a new admin and block a user. If you want to change password 
+then click change password button of if you want to add a new admin then click on
+add new admin button. If you want to block a user then click block a user buton. 
+Then you will seen a block user interface. If you want to block a teacher 
 then click show teacher and you can see the user id. If you want to block a specific
 user then you put the user id on entry box and then click on delete button.
 You can see the existing teacher and existing student in this system by clicking s
