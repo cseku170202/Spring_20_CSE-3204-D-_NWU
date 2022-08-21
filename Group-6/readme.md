@@ -1,6 +1,6 @@
 # Building Rent Management
 
-# Project members: MD Abu siddik, Mrittika Banerjee, Thamina Akter mitu
+# Project members: MD Abu siddik, Mrittika Banerjee, Tahmina Akter mitu
 
 # Project Member Id: 20201131010, 20201140010, 20201148010
 
